@@ -16,10 +16,11 @@ function updateBackground() {
     // Add a random variable to bust the cache
     var url = 'http://wwc.instacam.com/instacamimg/UTAUS/UTAUS_l.jpg?rnd=' + (new Date().getTime());
     $('body').css('background-image', 'url(' + url + ')' );
+    console.log("Updating background");
 }
 
-$(document).ready(function(){
-    setInterval(updateTime, 1);
+$(document).ready(function() {
+    setInterval(updateTime, 1000);
     updateBackground()
     setInterval(updateBackground, 5 * 60 * 1000);
 });
