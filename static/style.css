@@ -1,10 +1,12 @@
 body {
     margin: 0px;
+    background-size: 50%;
 }
 
 .time-wrapper {
-    width: 310px;
-    height: 210px;
+    width: 320px;
+    color: #ffffff;
+    background-color: rgba(33, 100, 243, 0.5);
 }
 
 .time-clock {

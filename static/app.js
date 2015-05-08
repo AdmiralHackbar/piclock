@@ -1,6 +1,6 @@
-
-
-
+/**
+ * Updates the time shown
+ */
 function updateTime() {
     var time = moment().format('h:mm a');
     $('#time').text(time);
@@ -9,6 +9,17 @@ function updateTime() {
     $('#date').text(date);
 }
 
+/**
+ * Updates the background image
+ */
+function updateBackground() {
+    // Add a random variable to bust the cache
+    var url = 'http://wwc.instacam.com/instacamimg/UTAUS/UTAUS_l.jpg?rnd=' + (new Date().getTime());
+    $('body').css('background-image', 'url(' + url + ')' );
+}
+
 $(document).ready(function(){
     setInterval(updateTime, 1);
+    updateBackground()
+    setInterval(updateBackground, 5 * 60 * 1000);
 });
