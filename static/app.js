@@ -10,5 +10,5 @@ function updateTime() {
 }
 
 $(document).ready(function(){
-    setInterval(updateTime(), 1000);
+    setInterval(updateTime, 1);
 });
