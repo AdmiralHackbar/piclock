@@ -4,10 +4,12 @@ from flask.ext.assets import Environment, Bundle
 app = Flask(__name__)
 assets = Environment(app)
 
-js = Bundle('jquery.min.js', 'moment.min.js', 'app.js', filters='jsmin', output='gen/packed.js')
+js = Bundle('jquery.min.js', 'moment.min.js', filters='jsmin', output='gen/packed.js')
+app_js = Bundle( 'app.js', filters='jsmin', output='gen/app_packed.js')
 css = Bundle('style.css', output='gen/packed.css')
 assets.register('js_all', js)
 assets.register('css_all', css)
+assets.register('app_js', app_js)
 assets.init_app(app)
 
 

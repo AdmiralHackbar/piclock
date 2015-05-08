@@ -10,12 +10,26 @@
     <link type="text/css" href="{{ ASSET_URL }}"  rel="stylesheet">
     {% endassets %}
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <div class="time-wrapper">
+
+    <div class="time-wrapper" id="time-wrapper">
         <div id="time" class="time-clock">
         </div>
         <div id="date" class="time-date"></div>
     </div>
+
+    <div class="news-wrapper" id="news-wrapper" style="display: none">
+        Testing
+        <br>
+        <br>
+        <br>
+    </div>
+
 </body>
+
+{% assets "app_js" %}
+<script type="text/javascript" src="{{ ASSET_URL }}"></script>
+{% endassets %}
 </html>

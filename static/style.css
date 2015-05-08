@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     background-size: 500px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .time-wrapper {
@@ -13,11 +14,21 @@ body {
     margin-top: 22%;
     text-align: center;
     font-size: 400%;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .time-date {
     text-align: center;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 200%;
+}
+
+
+.news-wrapper {
+    width: 320px;
+    color: #ffffff;
+    background-color: rgba(33, 100, 243, 0.8);
+    margin-top: 30px;
+}
+
+.news-item-wrapper {
+    padding: 0.2em;
 }
