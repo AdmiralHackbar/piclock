@@ -2,17 +2,15 @@ body {
     margin: 0px;
 }
 
-
-
 .time-wrapper {
     width: 320px;
     height: 240px;
 }
 
 .time-clock {
-    margin-top: 25%;
+    margin-top: 22%;
     text-align: center;
-    font-size: 300%;
+    font-size: 420%;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
