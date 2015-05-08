@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+}
+
+
+
+.time-wrapper {
+    width: 320px;
+    height: 240px;
+}
+
+.time-clock {
+    margin-top: 25%;
+    text-align: center;
+    font-size: 300%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.time-date {
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

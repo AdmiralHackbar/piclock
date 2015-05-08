@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    {% assets "js_all" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+    {% assets "css_all" %}
+    <link type="text/css" href="{{ ASSET_URL }}"  rel="stylesheet">
+    {% endassets %}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="time-wrapper">
+        <div id="time" class="time-clock">
+        </div>
+        <div id="date" class="time-date"></div>
+    </div>
+</body>
+</html>
