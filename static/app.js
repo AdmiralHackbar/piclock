@@ -5,7 +5,7 @@ function updateTime() {
     var time = moment().format('h:mm a');
     $('#time').text(time);
 
-    var date = moment().format('dddd, MMMM Do');
+    var date = moment().format('ddd, MMM Do');
     $('#date').text(date);
 }
 
